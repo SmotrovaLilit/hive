@@ -451,8 +451,6 @@ github.com/mattn/go-sqlite3 v1.10.0/go.mod h1:FPy6KqzDD04eiIsT53CuJW3U88zkxoIYsO
 github.com/mattn/goveralls v0.0.2 h1:7eJB6EqsPhRVxvwEXGnqdO2sJI0PTsrWoTMXEk9/OQc=
 github.com/mattn/goveralls v0.0.2/go.mod h1:8d1ZMHsd7fW6IRPKQh46F2WRpyib5/X4FOpevwGNQEw=
 github.com/matttproud/golang_protobuf_extensions v1.0.1/go.mod h1:D8He9yQNgCq6Z5Ld7szi9bcBfOoFv/3dc6xSMkL2PC0=
-github.com/meatballhat/negroni-logrus v0.0.0-20170801195057-31067281800f h1:V6GHkMOIsnpGDasS1iYiNxEYTY8TmyjQXEF8PqYkKQ8=
-github.com/meatballhat/negroni-logrus v0.0.0-20170801195057-31067281800f/go.mod h1:Ylx55XGW4gjY7McWT0pgqU0aQquIOChDnYkOVbSuF/c=
 github.com/microcosm-cc/bluemonday v1.0.1/go.mod h1:hsXNsILzKxV+sX77C5b8FSuKF00vh2OMYv+xgHpAMF4=
 github.com/microcosm-cc/bluemonday v1.0.2/go.mod h1:iVP4YcDBq+n/5fb23BhYFvIMq/leAFZyRl6bYmGDlGc=
 github.com/mitchellh/go-homedir v1.0.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
@@ -502,8 +500,6 @@ github.com/ory/herodot v0.6.2 h1:zOb5MsuMn7AH9/Ewc/EK83yqcNViK1m1l3C2UuP3RcA=
 github.com/ory/herodot v0.6.2/go.mod h1:3BOneqcyBsVybCPAJoi92KN2BpJHcmDqAMcAAaJiJow=
 github.com/ory/viper v1.5.6 h1:w4ceGgWwWLzAFYQ7bHaDZmwNsAto2JPVdyQjQnn7VWI=
 github.com/ory/viper v1.5.6/go.mod h1:TYmpFpKLxjQwvT4f0QPpkOn4sDXU1kDgAwJpgLYiQ28=
-github.com/ory/x v0.0.67 h1:9PawecWQWz7NPAI8xkulHcvfHriD92+YsMRu7z05lqM=
-github.com/ory/x v0.0.67/go.mod h1:7v4dBrNrHPO3jFur5lCqhLlBw5lIQEMJZ5uQPJC67oI=
 github.com/ory/x v0.0.72 h1:wFYrdJe5cl9D5FFdjbFeuJkrR5NeWUsg1OGV87IhTBs=
 github.com/ory/x v0.0.72/go.mod h1:7v4dBrNrHPO3jFur5lCqhLlBw5lIQEMJZ5uQPJC67oI=
 github.com/parnurzeal/gorequest v0.2.15/go.mod h1:3Kh2QUMJoqw3icWAecsyzkpY7UzRfDhbRdTjtNwNiUE=

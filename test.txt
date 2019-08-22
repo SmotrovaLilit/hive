@@ -1,0 +1,37 @@
+An error occurred and is being forwarded to the error user interface." code=500
+debug= details="map[]"
+error="pq: invalid input value for enum credentials_type: \"\""
+reason= request-id= status=
+trace="Stack trace: \ngithub.com/ory/x/sqlcon.HandleError\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/ory/x@v0.0.72/sqlcon/error.go:40\n
+github.com/ory/hive/selfservice.(*RequestManagerSQL).cr\n\t
+/home/OMP/l.smotrova/work/appstore/hive/selfservice/request_manager_sql.go:148\n
+github.com/ory/hive/selfservice.(*RequestManagerSQL).CreateLoginRequest\n\t
+/home/OMP/l.smotrova/work/appstore/hive/selfservice/request_manager_sql.go:74\n
+github.com/ory/hive/selfservice.(*StrategyHandler).NewLoginRequest\n\t
+/home/OMP/l.smotrova/work/appstore/hive/selfservice/handler.go:85\n
+github.com/ory/hive/selfservice.(*StrategyHandler).initLoginRequest\n\t
+/home/OMP/l.smotrova/work/appstore/hive/selfservice/handler.go:127\n
+github.com/ory/hive/session.(*Handler).IsNotAuthenticated.func1\n\t
+/home/OMP/l.smotrova/work/appstore/hive/session/handler.go:66\n
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/julienschmidt/httprouter@v1.2.0/router.go:334\n
+github.com/justinas/nosurf.(*CSRFHandler).handleSuccess\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/justinas/nosurf@v0.0.0-20190118163749-6453469bdcc9/handler.go:187\n
+github.com/justinas/nosurf.(*CSRFHandler).ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/justinas/nosurf@v0.0.0-20190118163749-6453469bdcc9/handler.go:144\n
+github.com/urfave/negroni.Wrap.func1\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46\n
+github.com/urfave/negroni.HandlerFunc.ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29\n
+github.com/urfave/negroni.middleware.ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38\n
+github.com/ory/x/reqlog.(*Middleware).ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/ory/x@v0.0.72/reqlog/middleware.go:140\n
+github.com/urfave/negroni.middleware.ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38\n
+github.com/ory/x/metricsx.(*Service).ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/ory/x@v0.0.72/metricsx/middleware.go:261\n
+github.com/urfave/negroni.middleware.ServeHTTP\n\t
+/home/OMP/l.smotrova/work/go/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38\n
+github.com/urfave/negroni.(*Negroni).ServeHTTP\n\t/home/OMP/l.smotrova/work/go/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96\ngithub.com/gorilla/context.ClearHandler.func1\n\t/home/OMP/l.smotrova/work/go/pkg/mod/github.com/gorilla/context@v1.1.1/context.go:141\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/lib/go-1.12/src/net/http/server.go:1995\nnet/http.serverHandler.ServeHTTP\n\t/usr/lib/go-1.12/src/net/http/server.go:2774\nnet/http.(*conn).serve\n\t/usr/lib/go-1.12/src/net/http/server.go:1878\nruntime.goexit\n\t/usr/lib/go-1.12/src/runtime/asm_amd64.s:1337"

@@ -1,0 +1,17 @@
+@startuml
+
+participant Browser as "browser"
+participant Hive as "Hive"
+participant loginUi as "loginUi"
+
+
+Browser -> Hive: Запрос на public/auth/browser/login
+Hive -> Browser: Redirect on login-ui\n/login?request=rId
+Browser -> loginUi:  /login?request=rId
+loginUi -> loginUi:
+note right: Получить инфу о риквесте /auth/browser/requests/login?request=rId\nВ ней будет crf token  список полей формы аутентификации.
+loginUi -> Browser: Форма аутентификации с базовой валидацией на js
+
+Browser -> Hive:POST public/auth/browser/methods/password/login?request=rId
+
+@enduml

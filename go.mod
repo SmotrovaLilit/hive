@@ -33,7 +33,6 @@ require (
 	github.com/leodido/go-urn v1.1.0 // indirect
 	github.com/mattn/go-runewidth v0.0.4 // indirect
 	github.com/mattn/goveralls v0.0.2
-	github.com/meatballhat/negroni-logrus v0.0.0-20170801195057-31067281800f
 	github.com/olekukonko/tablewriter v0.0.1
 	github.com/ory/dockertest v3.3.5+incompatible
 	github.com/ory/go-acc v0.0.0-20181118080137-ddc355013f90
