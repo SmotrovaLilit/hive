@@ -1,0 +1,43 @@
+GET http://localhost:4434/identities
+
+###
+
+GET http://localhost:1235/auth/browser/requests/registration?request=7873789e-b1c5-42ca-904f-28d5e4e01dd7
+
+###
+
+GET http://localhost:1235/auth/browser/requests/registration?request=e89d0b43-c02d-4993-9091-1c8a0763a5d5
+
+###
+
+
+POST http://localhost:1235/auth/browser/methods/password/login?request=fd05e1d3-2d54-451c-b547-05f083ec7339
+Content-Type: application/x-www-form-urlencoded
+
+csrf_token='qPnhn6lh85HLygPCbLmMTqi7S3BwNccDOKzq8rVn6BXE+mmndThYUWRKZtjgOf2ewAez4QkvCBdv32uhrs1H+A=='
+
+###
+
+
+POST http://localhost:1235/auth/browser/methods/password/login?request=ee276c80-3fa2-4a45-9b44-5c242b8a5fa6
+Content-Type: application/x-www-form-urlencoded
+X-CSRF-Token: Ba3mY3Y3XJ4qWazafRPcFCff8ujvuhE0LWFXH+V3B09LJla0yt8YeKaT/pAPpDXH4bG329gjeHUtv23iosYLUA==
+Cookie: csrf_token=Touw17zoROaMylJKcrfp08ZuRTM3mWlBAN46/UexDB8=
+
+identifier=fdsfdsaf&password=fasfsaf
+}
+
+###
+
+
+POST http://localhost:1235/auth/browser/methods/password/registration?request=e89d0b43-c02d-4993-9091-1c8a0763a5d5
+Content-Type: application/x-www-form-urlencoded
+X-CSRF-Token: xjZF8PAUfkbyNFY+ZaB8JaPPvY7eLwH4YD3gcnFr24cWaPaBA5v2upjd7EbG+ieRuRwvuNllcXTyzkwrQpu0+Q==
+Cookie: csrf_token=0F6zcfOPiPxq6bp4o1pbtBrTkjYHSnCMkvOsWTPwb34=
+
+identifier=admin&password=password&email=email
+}
+
+###
+
+

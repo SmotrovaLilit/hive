@@ -1,0 +1,73 @@
+{
+  "id": "7873789e-b1c5-42ca-904f-28d5e4e01dd7",
+  "issued_at": "2019-08-23T12:42:11.366876684Z",
+  "expires_at": "2019-08-23T14:20:11.366877027Z",
+  "request_url": "http://localhost:1235/auth/browser/registration",
+  "headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,be-BY;q=0.6,be;q=0.5,en-AS;q=0.4"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "Cookie": [
+      "Goland-ae63730f=0871d30f-baa8-4e79-bb88-061d16e0bdf0"
+    ],
+    "Purpose": [
+      "prefetch"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+    ]
+  },
+  "methods": {
+    "oidc": {
+      "method": "oidc",
+      "config": {
+        "action": "http://localhost:1235/auth/browser/methods/oidc/auth/7873789e-b1c5-42ca-904f-28d5e4e01dd7",
+        "fields": {
+          "csrf_token": {
+            "name": "csrf_token",
+            "type": "hidden",
+            "value": "UEDqlbxdZ0gXRudAYQydkN128HUBr9qXA/fpmB3QlKkmRfuk/JNTWFDibNVXMYDKTRp956c+MSp6bRb0fgWhUg=="
+          }
+        },
+        "providers": [
+          {
+            "name": "provider",
+            "type": "submit",
+            "value": "github"
+          }
+        ]
+      }
+    },
+    "password": {
+      "method": "password",
+      "config": {
+        "action": "http://localhost:1235/auth/browser/methods/password/registration?request=7873789e-b1c5-42ca-904f-28d5e4e01dd7",
+        "fields": {
+          "csrf_token": {
+            "name": "csrf_token",
+            "type": "hidden",
+            "required": true,
+            "value": "UEDqlbxdZ0gXRudAYQydkN128HUBr9qXA/fpmB3QlKkmRfuk/JNTWFDibNVXMYDKTRp956c+MSp6bRb0fgWhUg=="
+          },
+          "password": {
+            "name": "password",
+            "type": "password",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}

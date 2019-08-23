@@ -6,12 +6,29 @@ participant RegUi as "registrationUi"
 
 
 Browser -> Hive: Запрос на public/auth/browser/registration
-Hive -> Browser: Redirect on reg-ui\n/register?request=rId
-Browser -> RegUi:  reg-ui\n/register?request=rId
+Hive -> Hive: Проверить что пользователь\n еще не авторизован
+alt Пользователь авторизован
+Hive -> Browser: redirect to /return_url
+note right: Редирект на \nстраницу urls.default_return_to
+else Пользователь не авторизован
+Hive -> Hive
+note left: Сохраненние риквеста в хранилище
+Hive -> Browser: Redirect to /register?request=rId
+Browser -> RegUi: /register?request=rId
 RegUi -> RegUi:
-note right: Получить инфу о риквесте /auth/browser/requests/registration?request=rId\nВ ней будет crf token  список полей формы аутентификации.
+note right: Получить инфу о риквесте /auth/browser/requests/registration?request=rId\nПример ответа getRegistrationRequestExample.json.
 RegUi -> Browser: Форма аутентификации с базовой валидацией на js
 
 Browser -> Hive:POST public/auth/browser/methods/password/registration?request=rId
+Hive -> Hive: Проверить rId
+alt Успех: риквест валидный и не истек по времени
+Hive -> Hive:
 Hive -> Hive: GET identity.schema.json from config path
+note left: Redirect на страницу ошибок или forward
+else Ошибка: риквест не валидный
+Hive -> Browser: redirect to
+end
+
+
+end
 @enduml
